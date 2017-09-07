@@ -31,15 +31,6 @@ Developer @GA in NYC
   clear: both;
 }
 
-.alignright {
-  float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
-}
-
-.alignleft {
-  float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
-}
 
 /******************************************
 /* BASE STYLES
@@ -49,7 +40,9 @@ body {
      color: #000;
      font-size: 12px;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+
+     /*font-family: Helvetica, Arial, sans-serif;*/
+     font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -59,22 +52,338 @@ body {
 
 /* Center the container */
 #container {
-  width: 960px;
+  width: 940px;
+  height: 2500px;
   margin: auto;
+  background-color: #f0efef;
+  border:black 1px solid;
 }
 
 header {
-
+  width: 939px;
+  height: 80px;
+  background-color:#033048;
+  font-size:24px;
+  text-align: center;  
 }
 
-footer {
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+}
 
+.logo{
+    float: left;
+    display: block;
+    color: white;    
+    padding-top: 22px;
+    padding-left: 50px;
+    padding-right: 16px;
+    padding-bottom: 22px;
+    font-weight: 800;
+}
+header li {
+    float: right;
+}
+header li a {
+    display: block;
+    color: #f9e42e;    
+    padding: 23px 26px;
+    text-decoration: none;
+    font-weight: 600;    
+}
+header li a:link {
+    color: #f9e42e;
+    font-weight: 600;    
+}
+/*header li a:visited {
+    color: white;
+    font-weight: 600;    
+}*/
+
+/* mouse over link */
+header li a:hover {
+    color: green;
+    font-weight: bold;
+}
+
+/* selected link */
+header li a:active {
+    color: blue;
+}
+
+
+
+
+
+.top_Two_Sides{
+  width: 940px;  
+  height: 2010px;
+}
+
+.alignleft {
+  width: 700px;  
+  height: 2000px;
+  float: left;
+  /*padding: 0 0 10px 10px;*/
+  padding: 0 0 0 50px;
+ /* note the padding around a left floated image */
+ /* border:black 1px solid;*/
+}
+
+.upper_alignleft_div{
+height: 1000px;
+padding: 60px 0 20px 0;
+border-bottom: 1px #033048 solid;
+}
+
+.Post_Titles{
+  font-size:40px;
+  font-weight: 600;
+  color: #033048;
+}
+
+.img_1_div{  
+  margin: 10px 0;
+  width: auto; 
+  height: 300px;
+  display: block;  
+  background: url("../images/blog_photo1.jpg") no-repeat;
+  background-size: contain;
+}
+
+.body_text_p:first-letter { 
+  float: left;
+  font-weight: 600;
+  font-size: 75px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+  margin: 0;
+  line-height: 60px;
+}
+.body_text_p{
+ font-weight: 300;
+ font-size: 24px;
+}
+
+.ReadMore_div{
+  /*text-align: right;*/
+  float: right;
+  margin-top: 40px;
+  height: 60px;
+  font-size: 24px;
+  color: #033048;
+  font-weight: 600;
+}
+
+.ReadMore_div a{
+  display: block;
+  text-decoration: none;
+}
+
+
+.lower_alignleft_div{
+height: 1000px;
+padding: 60px 0 20px 0;
+border-bottom: 1px #033048 solid;
+}
+
+.img_2_div{  
+  margin: 10px 0;
+  width: auto; 
+  height: 300px;
+  display: block;  
+  background: url("../images/blog_photo2.jpg") no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+
+.alignright {
+  width: 240px; 
+  height: 1500px;
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  /*border:black 1px solid;*/
+}
+
+.categories{
+  /*width: 240px;*/
+  height: 300px;
+  padding: 60px 0 15px 0; 
+  margin:0;
+}
+
+.alignrightHeader_div{
+  color: #033048;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.categories ul{
+  list-style-type: none;
+}
+
+.categories li{
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.aboutRelaxer{
+  width: 230px; 
+  height: 300px;  
+}
+
+.alignrightHeader_div2{
+  color: #033048;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.aboutRelaxer p{
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.learMore_P{
+  color: #033048;
+  font-size: 22px;
+  font-weight: 600;
+}
+.adUnit{
+  margin-top: 80px;
+  width: 220px; 
+  height: 600px;
+  background-color: white;  
+  padding:0 10px;
+}
+
+.adUnit_div{
+
+  color: #033048;
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.SignUp{
+ height:75px;
+ width: auto;
+ max-width:100%; 
+/*width: 100%;
+ padding-left: 2px;
+ padding-right: 2px;*/
+ margin: 60px 1px 0 1px;
+}
+
+.SignUp_div{
+ height:75px;
+ background-color: #f9e42e;
+ border: 3px solid rgb(225, 239, 31);
+ padding-top: 16px;
+}
+
+.SignUp_div_button{
+  width: 190px;
+  height:36px;
+  padding-top: 10px;
+  text-align: center;
+  margin: auto;
+  background-color: #162A59;
+  font-weight: 800;
+  font-size:   12px;
+  font-family: "Open Sans", sans-serif; 
+  color: white;
+  border-radius: 5px;
+}
+ 
+footer {
+ width: auto;
+ max-width: 100%;  
+ text-align: center;
+ height: 274px;
+ /*padding-left: 2px;
+ padding-right: 2px;*/
+ margin: 0 1px 1px 1px;
+ color: white;
+}
+
+.footer_top_div{
+height: 274px;
+  background-color: #121212; 
+  border: 1px solid black;
+}
+
+.footer_top_txt{
+  text-align: center;
+  margin-top: 35px; 
+  font-weight: 800;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif; 
+  color: rgb(225, 239, 31);
+}
+
+.footer_icons{
+height: 80px;
+margin-bottom: 70px;
+padding-top: 30px;
+}
+
+.footer_twitter_filler{
+float: left;
+width: 45%;
+height: 80px; 
+}
+
+.footer_twitter{
+background: url(../images/twitter.png) no-repeat center top;
+display: inline-block;
+height: 80px;
+width: 5%;
+float: left; 
+}
+
+.footer_facebook{
+background: url(../images/facebook.png) no-repeat center top;
+height: 80px;
+ width: 5%; 
+float: left;
+}
+
+.footer_facebook_filler{
+float: left;
+width: 45%;
+height: 80px; 
+}
+
+.footer_copyRight{
+margin-top: 12px;
+font-size: 9px;
+font-family: "Open Sans", sans-serif; 
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
+/**/
+ 
 
+/*  
+a:visited {
+    color: black;
+}
+*/
+
+/* mouse over link */
+a:hover {
+    color: green;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
 
 
